@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>JS Tricky - Ch 3, Video 6</title>
+        <link href="../../styles.build.css" type="text/css" rel="stylesheet" />
+        <style type="text/css">
+            .robot {
+                position: absolute;
+                top: calc(50% - 75px);
+                left: calc(50% - 75px);
+                width: 150px;
+                height: 150px;
+                background: url(robot-07.png) center center no-repeat;
+                background-size: contain;
+            }
+
+            .robot--inner {
+                position: absolute;
+                top: 60px;
+                left: 35px;
+                width: calc(100% - 70px);
+                height: 3rem;
+                font-size: 0.8rem;
+                text-align: center;
+                background: white;
+                color: black;
+                border: 1px solid white;
+                border-radius: 2px;
+            }
+        </style>
+    </head>
+    <body class="main-body ">
+        <div class="main-container">
+            <div class="main-content">
+                <h1 class="main-head">Challenge: Robots!</h1>
+
+                <p class="text-center">
+                    <button id="create" class="btn">More Robots!</button>
+                </p>
+
+                <div id="bot-slot" class="w-full h-full relative"></div>
+            </div>
+        </div>
+        <script src="end.js"></script>
+    </body>
+</html>

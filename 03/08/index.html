@@ -1,0 +1,102 @@
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>JS Tricky - Ch 3, Video 8</title>
+        <link href="../../styles.build.css" type="text/css" rel="stylesheet" />
+        <style type="text/css"></style>
+    </head>
+    <body class="main-body ">
+        <div class="main-container">
+            <div class="main-content">
+                <h1 class="main-head">Challenge: Story Surprise</h1>
+
+                <div class="text-center md:flex w-full md:w-4/5 m-auto">
+                    <form
+                        id="form-input"
+                        class="
+                            align-top
+                            inline-block
+                            w-full
+                            md:w-1/2
+                            text-left
+                            box-border
+                        "
+                    >
+                        <p class="mb-2">Fill these in, then click Generate.</p>
+
+                        <p>
+                            <input
+                                type="text"
+                                value=""
+                                placeholder="noun"
+                                id="noun"
+                                class="block mb-2"
+                                required
+                            />
+                            <input
+                                type="text"
+                                value=""
+                                placeholder="adjective"
+                                id="adjective"
+                                class="block mb-2"
+                                required
+                            />
+                            <input
+                                type="text"
+                                value=""
+                                placeholder="plural noun"
+                                id="plural_noun"
+                                class="block mb-2"
+                                required
+                            />
+                            <input
+                                type="text"
+                                value=""
+                                placeholder="adverb"
+                                id="adverb"
+                                class="block mb-2"
+                                required
+                            />
+                            <input
+                                type="text"
+                                value=""
+                                placeholder="proper name"
+                                id="proper_name"
+                                class="block mb-2"
+                                required
+                            />
+                            <input
+                                type="text"
+                                value=""
+                                placeholder="a food"
+                                id="food"
+                                class="block mb-2"
+                                required
+                            />
+                        </p>
+
+                        <p>
+                            <button id="create" class="btn">Generate</button>
+                        </p>
+                    </form>
+
+                    <div
+                        id="story-output"
+                        class="
+                            w-full
+                            md:w-1/2
+                            inline-block
+                            align-top
+                            pt-4
+                            text-left
+                            box-border
+                        "
+                    >
+                        <p class="text-gray-400">(Story will appear here)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="end.js"></script>
+    </body>
+</html>

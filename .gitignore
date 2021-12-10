@@ -1,0 +1,10 @@
+node_modules/
+logs/
+
+# IDE - VSCode
+.vscode/*
+
+# System Files
+.DS_Store
+Thumbs.db
+package-lock.json

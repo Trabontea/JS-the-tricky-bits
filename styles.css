@@ -1,0 +1,25 @@
+@import url("https://rsms.me/inter/inter.css");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.main-body {
+    @apply font-sans bg-blue-100 text-black p-10;
+}
+
+.main-container {
+    @apply container mx-auto w-11/12 relative;
+}
+
+.main-head {
+    @apply text-xl sm:text-3xl text-center font-semibold mb-4;
+}
+
+.main-content {
+    @apply p-4 bg-white border-gray-200 shadow;
+}
+
+.btn {
+    @apply border-indigo-500 border-solid border p-2 bg-indigo-400 text-white font-semibold hover:bg-indigo-300 transition duration-300 w-32;
+}
