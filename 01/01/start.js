@@ -12,6 +12,10 @@
         "Cécile McLorin Salvant",
     ];
 
+    for (var i = 0; i < band.length; i++) {
+        var member = band[i];
+    }
+
     // Nested array
     var bands = [
         [
@@ -32,4 +36,12 @@
         ],
         ["Chick Corea", "Miroslav Vitous", "Roy Haynes"],
     ];
+
+    for (var b = 0; b < bands.length; b++) {
+        var band = bands[b];
+
+        for (var c = 0; c < band.length; c++) {
+            var item = band[c]
+        }
+    }
 })();
