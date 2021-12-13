@@ -58,14 +58,29 @@
         var meanPopSlot = document.querySelector("#mean-pop");
         var results = document.querySelector("#results");
 
-        // STEP 1: Use Array.reduce to produce this array from places
-        var states = ["North Krisoto", "Old York", "Zagrat"];
+         // STEP 1: Use Array.reduce to produce this array from places
+         var states = places.reduce(function (states, place) {
+            if (states.indexOf(place.state) === -1) {
+                states.push(place.state);
+            }
+            return states;
+        }, []);
 
         // STEP 2: Create select box options for every one of those states
-        var option = document.createElement("option");
-        option.setAttribute("value", "North Krisoto");
-        option.append(document.createTextNode("North Krisoto"));
-        selectState.appendChild(option);
+        // every would also work, just remember returns
+       
+        var state = states.map(function(state) {
+            console.log('state',state)
+            var option = document.createElement("option");
+            option.setAttribute("value", state);
+            option.append(document.createTextNode(state));
+            selectState.appendChild(option);
+            return state;
+        })
+
+
+       
+        
 
         selectState.addEventListener("change", function (evt) {
             evt.preventDefault();
